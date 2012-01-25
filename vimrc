@@ -17,9 +17,10 @@ let localleader = '\'
 
 
 "colors
-"set background=light
-"colorscheme default
-colorscheme vividchalk
+set background=light
+colorscheme default
+"colorscheme vividchalk
+"colorscheme darkburn
 set background=dark
 if $TERM == '^\%(screen\|xterm-color\)$' && t_Co == 8
   set t_Co=256
