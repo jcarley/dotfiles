@@ -20,11 +20,11 @@ let localleader = '\'
 
 
 "colors
-set background=light
-colorscheme default
+"set background=light
+"colorscheme default
 "colorscheme vividchalk
-"colorscheme darkburn
-set background=dark
+colorscheme darkburn
+"set background=dark
 if $TERM == '^\%(screen\|xterm-color\)$' && t_Co == 8
   set t_Co=256
 endif
@@ -223,7 +223,7 @@ let NERDTreeHighlightCursorline = 1
 " Make bookmarks visible
 let NERDTreeShowBookmarks = 1
 " Show hidden files
-let NERDTreeShowHidden = 1
+let NERDTreeShowHidden = 0
 " Don't hijack NETRW
 "let NERDTreeHijackNetrw = 0
 let NERDTreeHijackNetrw = 1
