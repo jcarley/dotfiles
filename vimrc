@@ -20,11 +20,11 @@ let localleader = '\'
 
 
 "colors
-"set background=light
+set background=dark
 "colorscheme default
+"colorscheme darkburn
+colorscheme railscasts2
 "colorscheme vividchalk
-colorscheme darkburn
-"set background=dark
 if $TERM == '^\%(screen\|xterm-color\)$' && t_Co == 8
   set t_Co=256
 endif
