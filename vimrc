@@ -210,6 +210,20 @@ map <Leader>rt :RebuildTagsFile<cr>
 let g:CommandTMaxHeight=35
 let g:CommandTMatchWindowAtTop=1
 
+"shortcut for a new tab
+nmap <leader>N :call NewTabAndAck()<cr>
+function! NewTabAndAck()
+  :tabnew
+endfunction
+
+"shortcut to open new tab and commandT
+nmap <leader>n :call NewTabAndCommandT()<cr>
+function! NewTabAndCommandT()
+    :tabnew
+    :CommandT
+endfunction
+
+
 
 """""""" NERDTree:
 " much of this is from http://github.com/spicycode/Vimlander-2-The-Quickening
