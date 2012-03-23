@@ -170,6 +170,9 @@ endif
 "save as sudo
 command! -bar -nargs=0 SudoW :setl nomod|silent exe 'write !sudo tee % >/dev/null'|let &mod = v:shell_error
 
+"set clipboard to unnamed
+set clipboard=unnamed
+
 "Copy current Vim paste register to clipboard
 map <F2> :PBCopy<cr>
 "Toggle between paste and nopaste, shows which one is active
