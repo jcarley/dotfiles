@@ -56,7 +56,7 @@ set visualbell t_vb=
 "General settings that make Vim awesome
 filetype plugin indent on
 syntax on
-set  dictionary="/usr/dict/words"
+set dictionary="/usr/dict/words"
 set wildmode=list:longest,full " Better completion
 set wildmenu
 set ruler
@@ -171,7 +171,7 @@ endif
 command! -bar -nargs=0 SudoW :setl nomod|silent exe 'write !sudo tee % >/dev/null'|let &mod = v:shell_error
 
 "set clipboard to unnamed
-set clipboard=unnamed
+"set clipboard=unnamed
 
 "Copy current Vim paste register to clipboard
 map <F2> :PBCopy<cr>
